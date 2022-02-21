@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    font-family: 'roboto', sans-serif;
+    background-color: #ebebeb;
+    font-size: 12px;
+  
+}
+
+header{
+    background-color: #EAC926;
+    padding: 10px;
+    margin-bottom: 0;
+    border-bottom: 0;
+    height: 380px; 
+}
+
+img{
+    width: 100%;
+}
+
+main{
+    text-align: center;
+    width: 100px;
+    background-color: #ebebeb;
+    align-items: center;
+    max-width: 90%;
+    border-top: 1px solid #ebebeb;
+}
+
+.main-header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    max-width: 30%;
+    margin-bottom: .5rem;
+}
+
+.compraEnCuotas{ 
+    text-align: justify;
+    margin-bottom: .5rem;
+    font-weight: normal;
+    
+}
+
+.container{
+    display: flex;
+   
+}
+
+.barraDeBusqueda{
+   
+    border-radius: 3px;
+    padding: 3px;
+    
+}
+.items{
+    text-align: left;
+
+}
+
+
+header form{
+     flex: 1 0 30vw;
+     justify-content: center;
+     margin-bottom: .5rem;
+}
+
+header form fieldset{
+    flex: 1 0 auto;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+}
+
+header form fieldset button{
+    flex: 0 0 2rem;
+    border: none;
+    outline: none;
+    border-radius: 0 2rem 2rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-menu{
+    background-color: #03264C;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 9px 6px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.main-navbar{
+    display: none;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+/* .fa-id-card{
+    padding-left: .2rem;
+}
+
+.fa-sing-out-alt{
+    padding-left: 0.2rem;
+}
+
+.fa-shopping-basket{
+    padding-left: 0.2rem;
+} */
+
+.title-section{
+    font-size: 22px;
+    padding-left: .6rem;
+    padding-top: 1rem;
+    padding-bottom: .7rem;
+}
+
+.principal{
+    width: 90%;
+    margin: auto;
+}
+
+.article-card{
+    background-color: rgb(255, 255, 255);
+    margin: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 19px 13px;
+}
+
+.article-card:hover{
+    box-shadow: 0px 0px 10px rgba(168, 168, 168, 0.32);
+}
+
+.fa-truck{
+    display: flex;
+    font-size: 23px;
+    padding: 6px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color: #39b54a;
+    border-radius: 50%;
+    position: relative;
+    left: 80%;
+    top: -17px;
+    transition: all 0.4s ease;
+}
+
+.description{
+    visibility: hidden;
+}
+
+.descripciones{
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.descripciones:hover{
+    opacity: 1;
+}
+
+.fa-truck-products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.precio{
+    font-size: 18px;
+    padding: 0 10px 10px 10px;
+}
+
+.descuestos{
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripciones{
+    font-size: 16px;
+    padding: 0 0 10px 10px;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 29px;
+}
+
+
+
+.tituloFooter{
+    font-size: .7rem;
+    padding: .1rem 0;
+}
+
+.copyright{
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.iconsFooter{
+    transition: all 0.3 ease;
+}
+
+.iconsFooter:hover{
+    color: #39b54a;
+}
+
+@media screen and (min-width: 361px){
+    
+    .logo{
+       
+        margin-bottom: .5rem;
+    }
+
+    .compraEnCuotas{
+        font-weight: 400%;
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: 15px;
+    }
+     .precio{
+        width: 18px;
+    }
+    .descuento{
+        width: 16px;
+    }
+    .descripcion{
+        width: 16px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 768px){
+    .main-header{
+        padding: 10px;
+    }
+
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .brand{
+        padding: 0 20px 0 0;
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+    .main-header-top-bar{
+        align-items: center;
+        gap: 0px;
+    }
+
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+        margin: 0;
+        padding: 0 0 0 20px;
+    }
+ 
+    .burger-menu{
+        display: none;
+    }
+
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .main-navbar ul{
+        display: flex;
+    }
+
+    .main-navbar li{
+        margin: 0 3px;
+    }
+
+    .articles{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    .article-card{
+        max-width: 45%;
+    }
+
+    .descripcion{
+        border-top: 1px solid #ebebeb;
+        visibility: visible;
+    }
+
+    .footer-container{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        width: 90%;
+        gap: 4px;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+        gap: 0;
+    }
+
+    .brand{
+        padding: 0 20px 0 0;
+    }
+
+    .logo{
+        width: 250px;
+    }
+
+    .main-header-top-bar{
+        align-items: center;
+    }
+
+    .copy-header{
+        max-width: none;
+        font-size: 17px;
+        font-weight: 400;
+        padding: 0 0 0 20px;
+        margin: 0;
+    }
+
+    .main-navbar{
+        margin-top: 10px;
+    }
+
+    .main-navbar li{
+        margin:  0 10px;
+    }
+
+    .main-navbar a{
+        font-size: 19px;
+    }
+
+    .principal{
+        max-width: 1200px;
+    }
+
+    .articles{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+    }
+
+    .descripcion{
+        border-top: 1px solid #ebebeb;
+        visibility: visible;
+    }
+
+    .footer-container{
+        width: 90px;
+        max-width: 1200px;
+        margin: auto;
+        padding-top: 1rem;
+    }
+}
